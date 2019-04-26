@@ -127,8 +127,6 @@ class App extends Component {
         info.value.forEach(versionNumber => {
           tableColumns.productName.push(productIdMap[productId]);
           tableColumns.version.push(additionalInfo[versionNumber].releaseNotesUrl);
-          tableColumns.releaseNotesUrl.push(additionalInfo[versionNumber].releaseNotesUrl);
-          tableColumns.systemRequirements.push(additionalInfo[versionNumber].systemRequirements);
           tableColumns.sfVersion.push(additionalInfo[versionNumber].sfVersion);
           tableColumns.pvsVersion.push(additionalInfo[versionNumber].pvsVersion);
           tableColumns.licensing.push(additionalInfo[versionNumber].licensing);
@@ -244,24 +242,6 @@ class App extends Component {
                                   </td>
                                   {
                                     tableColumns.version.map((colName, idx) => (<td key={idx}>{colName ? <a href={colName} target="_blank">{colName}</a> : null}</td>))
-                                  }
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  {
-                                    tableColumns.releaseNotesUrl.map((colName, idx) => (
-                                      <td key={idx}>
-                                        {colName ? <a href={colName} target="_blank">Release Notes</a> : null}
-                                      </td>
-                                    ))
-                                  }
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  {
-                                    tableColumns.systemRequirements.map((colName, idx) => (
-                                      <td key={idx}>
-                                        {colName ? <a href={colName} target="_blank">System Requirements</a> : null}</td>))
                                   }
                                 </tr>
                                 <tr>
