@@ -8,8 +8,8 @@ export const Header = props => (
         <div class="container">
           <div class="navbar-header">
            <a class="navbar-brand" href="https://www.citrix.com">
-            <span><img class="navbar-brand-img" src={logo}></img></span>
-          </a><span class="inline-logo-title">| Upgrade Central</span>
+            <span><img alt="citrix" class="navbar-brand-img" src={logo}></img></span>
+          </a><span class="inline-logo-title">| Upgrade Guide</span>
           </div>
         </div>
       </nav>

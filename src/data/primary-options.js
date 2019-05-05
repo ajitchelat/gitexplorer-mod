@@ -1,7 +1,6 @@
 const options = [
   { value: 'xaxd', label: 'XenApp and XenDesktop' },
-  { value: 'cvad', label: 'Citrix Virtual Apps and Desktops' },
-  { value: 'pvs', label: 'Citrix Provisioning'}
+  { value: 'cvad', label: 'Citrix Virtual Apps and Desktops' }
 ];
 
 export const primaryOptions = options.sort((x, y) => {
